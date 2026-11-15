@@ -1,9 +1,9 @@
-https://smokefree.gov  
-https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/index.html 
-https://www.lung.org/quit-smoking 
-https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking.html 
-https://www.heart.org/en/healthy-living/healthy-lifestyle/quit-smoking-tobacco 
-https://truthinitiative.org/outsmart-nicotine 
-https://doh.wa.gov/you-and-your-family/commercial-tobacco/how-quit 
-https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/quitline/index.html 
-https://quitforlife.com
+Federal Government Resources,https://smokefree.gov  
+CDC Resources,https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/index.html 
+American Lung Association Resources,https://www.lung.org/quit-smoking 
+American Cancer Society Resources,https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking.html 
+American Heart Association Resources,https://www.heart.org/en/healthy-living/healthy-lifestyle/quit-smoking-tobacco 
+How to break the cycle from the Truth Initiative,https://truthinitiative.org/outsmart-nicotine 
+Washington State Department of Health Resources,https://doh.wa.gov/you-and-your-family/commercial-tobacco/how-quit 
+CDC Quitline Resources,https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/quitline/index.html 
+Quit For Life Resources,https://quitforlife.com
