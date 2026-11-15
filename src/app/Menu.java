@@ -44,21 +44,7 @@ public class Menu {
         menus.add(new MenuList(menuNames, menuBehaviors, behaviorValues));}
     }
 
-    /**
-     * Program entry point. Saves a test habit, then runs the menu loop until the user exits.
-     *
-     * @param args unused
-     * @throws IOException if the save file cannot be written
-     */
     public static void main(String[] args) throws IOException{
-    	TextEncoder encoder = new TextEncoder();
-    	Habit testHabit = new Habit("quit smoking");
-
-    	encoder.beginObject(testHabit.getHabitName(), testHabit)
-    	       .addField("DaysLen", String.valueOf(testHabit.getStreakLength()))
-    	       .endObject();
-    	encoder.save();
-    	
         Menu App = new Menu();
 
         App.populateMenus();
