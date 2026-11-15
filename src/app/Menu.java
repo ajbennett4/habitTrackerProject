@@ -3,14 +3,25 @@
 
 package app;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import fileio.TextEncoder;
+import habits.Habit;
+
+/**
+ * Console menu system and program entry point.
+ */
 public class Menu {
 
+    /** All menu screens; index 0 is the main menu. */
     public ArrayList<MenuList> menus = new ArrayList<>();
     int currentMenu = 0;
 
+    /**
+     * Builds the menu screens: main menu, habits, alternative activities and resources.
+     */
     public void populateMenus(){
         {String menuNames[] = {"Habit Tracker", "Alternative Activities", "Additional Resources", "Exit Program"};
         optionBehavior menuBehaviors[] = {optionBehavior.loadMenu, optionBehavior.loadMenu, optionBehavior.loadMenu, optionBehavior.terminateProgram};
@@ -33,8 +44,21 @@ public class Menu {
         menus.add(new MenuList(menuNames, menuBehaviors, behaviorValues));}
     }
 
-    public static void main(String[] args){
+    /**
+     * Program entry point. Saves a test habit, then runs the menu loop until the user exits.
+     *
+     * @param args unused
+     * @throws IOException if the save file cannot be written
+     */
+    public static void main(String[] args) throws IOException{
+    	TextEncoder encoder = new TextEncoder();
+    	Habit testHabit = new Habit("quit smoking");
 
+    	encoder.beginObject(testHabit.getHabitName(), testHabit)
+    	       .addField("DaysLen", String.valueOf(testHabit.getStreakLength()))
+    	       .endObject();
+    	encoder.save();
+    	
         Menu App = new Menu();
 
         App.populateMenus();
